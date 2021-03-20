@@ -1,0 +1,12 @@
+﻿@model CareApp.ViewModels.AddTaskViewModel;
+
+<h1>Add Task</h1>
+
+<form asp-controller="Tasks" asp-action="AddTask" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <input type="submit" value="Add Task" />
+</form>
